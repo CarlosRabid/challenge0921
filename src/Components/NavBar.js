@@ -61,23 +61,9 @@ function NavBar(props) {
         </Link>
 
         <Link to="/form" style={{ textDecoration: 'none', color: 'black' }}>
-          <ListItem button key="form" >
+          <ListItem button key="repo" >
             <ListItemIcon ><ListAltIcon /></ListItemIcon>
-            <ListItemText primary="Form" />
-          </ListItem>
-        </Link>
-
-        <Link to="/spread" style={{ textDecoration: 'none', color: 'black' }}>
-          <ListItem button key="spreadsheet" >
-            <ListItemIcon><StorageIcon /> </ListItemIcon>
-            <ListItemText primary="Spreadsheet" />
-          </ListItem>
-        </Link>
-
-        <Link to="/analytics" style={{ textDecoration: 'none', color: 'black' }}>
-          <ListItem button key="analytics" >
-            <ListItemIcon><PollIcon /> </ListItemIcon>
-            <ListItemText primary="Analytics" />
+            <ListItemText primary="Repo" />
           </ListItem>
         </Link>
 
@@ -109,7 +95,7 @@ function NavBar(props) {
           </IconButton>
 
           <Typography variant="h6" color="inherit">
-            Login Task Challenge 2021
+           ''     Login Task Challenge 2021    ''
           </Typography>
 
          

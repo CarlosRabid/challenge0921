@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import { TextField } from '@material-ui/core';
 import './form.css'
-import Typography from 'material-ui/styles/typography';
 
 class Comments extends Component {
     constructor() {

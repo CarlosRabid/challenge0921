@@ -17,19 +17,11 @@ class Landing extends Component {
         const { t } = this.props
         if (!this.props.isLoggedIn()) { return <Redirect to="/" /> }
         let dataLanding = [
-            { title: t("Form"), description: t("Create a new observation form."), link: "/form" , button: t("Create form")},
-            { title: t("Archive"), description: t("Review all available observation forms."), link: "/spread", button: t("View data") },
-            { title: t("Analytics"), description: t("Review data analytics and create charts."), link: "/analytics" , button: t("View analytics")}
+            { title: t("Repositories"), description: t("Repo details."), link: "/form" , button: t("Check Details")}
         ]
         return (
             <div className="landing-container">
                 {dataLanding.map(d => <CardLanding d={d} key={d.link} />)}
-
-
-
-                {/* <span className="button">w</span>
-                    <span className="button"><button id="spreadsheet" className="link"><Link to="/spread" className="links">{t('Spreadsheet')}</Link></button></span>
-                    <span className="button"><button id="analytics" className="link"><Link to="/analytics" className="links">{t('Analytics')}</Link></button></span> */}
             </div>
 
         )

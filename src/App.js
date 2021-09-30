@@ -5,8 +5,6 @@ import NavBar from './Components/NavBar';
 import Login from './Components/Login';
 import Landing from './Components/Landing';
 import Form from './Components/Form/Form';
-import Spreadsheet from './Components/Spreadsheet/Spreadsheet';
-import Analytics from './Components/Analytics/Analytics';
 import './App.css';
 import * as constant from './Components/Form/constant'
 import Loader from './Components/Loader';
@@ -111,14 +109,6 @@ class App extends Component {
 
           <Route path="/form" exact render={() =>
             <Form updateNavBar={this.updateNavBar} isLoggedIn={this.isLoggedIn} saveForm={this.saveForm} />}>
-          </Route>
-
-          <Route path="/spread" exact render={() =>
-            <Spreadsheet updateNavBar={this.updateNavBar} isLoggedIn={this.isLoggedIn} />}>
-          </Route>
-
-          <Route path="/analytics" exact render={() =>
-            <Analytics updateNavBar={this.updateNavBar} isLoggedIn={this.isLoggedIn} />}>
           </Route>
 
         </BrowserRouter>
